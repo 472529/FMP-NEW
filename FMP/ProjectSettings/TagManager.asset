@@ -17,6 +17,8 @@ TagManager:
   - Flashlight
   - Enemy
   - EnemyFire
+  - FxTemporaire
+  - Explosion
   layers:
   - Default
   - TransparentFX

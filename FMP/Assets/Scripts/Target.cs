@@ -10,12 +10,14 @@ public class Target : MonoBehaviour
     public Enemy enemy;
     AudioSource jet;
     public ParticleSystem fireBlast;
+    public ParticleSystem explosion;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         enemy = GetComponent<Enemy>();
         jet = GetComponent<AudioSource>();
         fireBlast = GameObject.FindGameObjectWithTag("EnemyFire").GetComponent<ParticleSystem>();
+        explosion = GameObject.FindGameObjectWithTag("Explosion").GetComponent<ParticleSystem>();
     }
 
     public void TakeDamage(float amount)
@@ -34,5 +36,9 @@ public class Target : MonoBehaviour
         jet.enabled = false;
         fireBlast.Pause();
         enemy.muzzleFlash.Pause();
+        explosion.Play();
+        Destroy(gameObject, 5f);
+        
+
     }
 }
