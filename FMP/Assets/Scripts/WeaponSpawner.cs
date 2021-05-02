@@ -5,14 +5,14 @@ using UnityEngine;
 public class WeaponSpawner : MonoBehaviour
 {
     public Object ShotGun;
-    public Object AK47;
+    public Object Rifle;
     public Object Sniper;
     
     void Start()
     {
-        ShotGun = Resources.Load("870_Shotgun 1");
-        AK47 = Resources.Load("AK-47 1");
-        Sniper = Resources.Load("Sniper");
+        ShotGun = Resources.Load("Heavy");
+        Rifle = Resources.Load("Rifle");
+        Sniper = Resources.Load("Sniper 1");
         Spawner();
     }
 
@@ -26,7 +26,7 @@ public class WeaponSpawner : MonoBehaviour
         }
         else if(random == 3)
         {
-            Instantiate(AK47, transform.position, transform.rotation);
+            Instantiate(Rifle, transform.position, transform.rotation);
         }
         else if(random == 2)
         {
