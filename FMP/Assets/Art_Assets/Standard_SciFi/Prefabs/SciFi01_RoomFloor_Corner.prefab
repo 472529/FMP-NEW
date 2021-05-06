@@ -104,6 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7380389727221497859}
   - component: {fileID: 1083773063752015071}
+  - component: {fileID: 4030625603233773647}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -138,5 +139,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShotGun: {fileID: 0}
-  AK47: {fileID: 0}
+  Rifle: {fileID: 0}
   Sniper: {fileID: 0}
+--- !u!114 &4030625603233773647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200089681195724477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20517165594d1cc439d794c339034f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
