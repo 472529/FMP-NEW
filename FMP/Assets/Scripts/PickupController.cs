@@ -29,6 +29,7 @@ public class PickupController : MonoBehaviour
             gunScript.enabled = false;
             rb.isKinematic = false;
             col.isTrigger = false;
+            gunScript.isEquipped = false;
         }
         if (equipped)
         {
@@ -50,6 +51,7 @@ public class PickupController : MonoBehaviour
     {
         equipped = true;
         slotFull = true;
+        gunScript.isEquipped = true;
 
         transform.SetParent(gunContainer);
         transform.localPosition = Vector3.zero;
@@ -83,6 +85,7 @@ public class PickupController : MonoBehaviour
 
 
         gunScript.enabled = false;
+        gunScript.isEquipped = false;
     }
 
     public void Sceneloaded()
@@ -92,6 +95,7 @@ public class PickupController : MonoBehaviour
             equipped = false;
             slotFull = false;
             gunScript.enabled = false;
+            gunScript.isEquipped = false;
         }
     }
 }

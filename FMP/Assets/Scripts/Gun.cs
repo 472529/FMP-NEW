@@ -14,6 +14,7 @@ public class Gun : MonoBehaviour
     public int currentAmmo;
     public float reloadTime = 2f;
     private bool isReloading = false;
+    public bool isEquipped = false;
     public Animator anim;
 
     PlayerController player;
@@ -75,6 +76,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         isReloading = false;
+        isEquipped = true;
         gunSound.Play();
         recoil.Fire();
         
@@ -108,6 +110,7 @@ public class Gun : MonoBehaviour
     IEnumerator Reload()
     {
         isReloading = true;
+        isEquipped = true;
         Debug.Log("Reloading...");
 
         anim.SetBool("Reloading", true);
