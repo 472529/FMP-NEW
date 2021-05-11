@@ -4921,6 +4921,7 @@ MonoBehaviour:
   allAmmo: 40
   currentAmmo: 20
   reloadTime: 1
+  isEquipped: 0
   anim: {fileID: 407986319783801157}
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 8217070898043302557}

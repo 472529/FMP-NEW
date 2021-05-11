@@ -17,7 +17,7 @@ public class AmmoSpawner : MonoBehaviour
     // Update is called once per frame
     void Spawner()
     {
-        float random = Random.Range(-1, 6);
+        float random = Random.Range(-1, 4);
         if (random == 2)
         {
             Instantiate(ammoBox, transform.position, transform.rotation);
