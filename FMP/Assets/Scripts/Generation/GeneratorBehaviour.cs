@@ -2,11 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.AI;
 
 public enum MapDimensionsType{TWO_DEE, THREE_DEE}
 
 public class GeneratorBehaviour : MonoBehaviour
 {
+	public NavMeshSurface surface;
     // Common properties: they are the same for all virtual maps and generation algorithms
     // Sizes
 	public static int MAX_SIZE = 16;
@@ -53,9 +55,15 @@ public class GeneratorBehaviour : MonoBehaviour
     DateTime postDate;
     public bool printTimings = false;
     public uint lastUsedSeed;
-	
 
-	public void Generate ()
+    public void Start()
+    {
+		Generate();
+		surface = GameObject.FindGameObjectWithTag("Navmesh").GetComponent<NavMeshSurface>();
+		surface.BuildNavMesh();
+		
+    }
+    public void Generate ()
 	{
 		isCurrentlyGenerating = true;
 

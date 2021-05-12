@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6500000}
-  m_Layer: 0
+  - component: {fileID: 7406322216523393633}
+  m_Layer: 10
   m_Name: SciFi01_RoomWall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,6 +95,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 4, z: 4}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &7406322216523393633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2217725711849702716
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419361245087346874}
   - component: {fileID: 5502414165734043602}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

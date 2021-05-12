@@ -19,6 +19,7 @@ TagManager:
   - EnemyFire
   - FxTemporaire
   - Explosion
+  - Navmesh
   layers:
   - Default
   - TransparentFX
