@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     // Start is called before the first frame update
     public float health = 50f;
     public Rigidbody rb;
-    public Enemy enemy;
+    public EnemyAiTutorial enemy;
     AudioSource jet;
     public ParticleSystem fireBlast;
     public ParticleSystem explosion;
@@ -35,7 +35,6 @@ public class Target : MonoBehaviour
         enemy.enabled = false;
         jet.enabled = false;
         fireBlast.Pause();
-        enemy.muzzleFlash.Pause();
         explosion.Play();
         Destroy(gameObject, 5f);
         

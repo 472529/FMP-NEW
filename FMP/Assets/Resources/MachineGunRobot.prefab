@@ -231,7 +231,6 @@ GameObject:
   - component: {fileID: 1064786095747047457}
   - component: {fileID: 1069436532642847735}
   - component: {fileID: 1069436532642847729}
-  - component: {fileID: 1069436532642847734}
   - component: {fileID: 1069436532642847728}
   - component: {fileID: 7900429721492407956}
   - component: {fileID: -4741642612441295700}
@@ -291,33 +290,6 @@ CapsuleCollider:
   m_Height: 4.0467563
   m_Direction: 1
   m_Center: {x: 0.012736639, y: 0.7045698, z: 0}
---- !u!114 &1069436532642847734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067839490078066177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51c5d0542aad2249aec1adfcf4ec39a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  stoppingDistance: 5
-  retreatDistance: 3
-  enemyHealth: 50
-  bulletDamg: 10
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  bullet: {fileID: 7422941822580239508, guid: d3fd44bd6c6096249b0bca826146e283, type: 3}
-  player: {fileID: 0}
-  muzzleFlash: {fileID: 894204289404826637}
-  startTimeBtwShots: 4
-  attackRange: 5
-  sightRange: 15
-  playerInSightRange: 0
 --- !u!114 &1069436532642847728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +412,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1067839490078066177}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 3
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
