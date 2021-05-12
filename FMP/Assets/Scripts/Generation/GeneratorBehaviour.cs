@@ -56,7 +56,7 @@ public class GeneratorBehaviour : MonoBehaviour
     public bool printTimings = false;
     public uint lastUsedSeed;
 
-    public void Start()
+    public void Awake()
     {
 		Generate();
 		surface = GameObject.FindGameObjectWithTag("Navmesh").GetComponent<NavMeshSurface>();

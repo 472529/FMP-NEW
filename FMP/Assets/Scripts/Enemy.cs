@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         muzzleFlash = GameObject.FindGameObjectWithTag("EnemyMuzzleFlash").GetComponent<ParticleSystem>();
