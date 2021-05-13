@@ -14,7 +14,7 @@ public class Target : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        enemy = GetComponent<Enemy>();
+        enemy = GetComponent<EnemyAiTutorial>();
         jet = GetComponent<AudioSource>();
         fireBlast = GameObject.FindGameObjectWithTag("EnemyFire").GetComponent<ParticleSystem>();
         explosion = GameObject.FindGameObjectWithTag("Explosion").GetComponent<ParticleSystem>();

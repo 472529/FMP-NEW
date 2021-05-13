@@ -10641,6 +10641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8925307858987325117, guid: 631e2b42358c7b0489238629d3a2f8bb,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8925307858987325119, guid: 631e2b42358c7b0489238629d3a2f8bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23673,6 +23678,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Navmesh
       objectReference: {fileID: 0}
+    - target: {fileID: 1797817011241332435, guid: ee8e7b3f3106272459a186164f1f99c6,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 9a64261084d4a3a4d85b79f8d09cd3ad,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee8e7b3f3106272459a186164f1f99c6, type: 3}
 --- !u!1 &682091791
@@ -28938,7 +28949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   createStartAndEnd: 1
-  forceStartAndEndInRooms: 0
+  forceStartAndEndInRooms: 1
   minimumDistanceBetweenStartAndEnd: 100
   maximumDistanceBetweenStartAndEnd: 100
   algorithmChoice: 0

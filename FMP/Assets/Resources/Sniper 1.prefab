@@ -770,6 +770,7 @@ MonoBehaviour:
   allAmmo: 10
   currentAmmo: 0
   reloadTime: 3
+  isEquipped: 0
   anim: {fileID: -3983639770145852863}
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 8717891644453636996}
@@ -805,7 +806,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c05ab3f0cfc885640934b0c1e1dfebce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a19717786df53174db9bf68ac0b3268f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

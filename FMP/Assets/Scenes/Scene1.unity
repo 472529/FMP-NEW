@@ -24495,6 +24495,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Navmesh
       objectReference: {fileID: 0}
+    - target: {fileID: 1797817011241332435, guid: ee8e7b3f3106272459a186164f1f99c6,
+        type: 3}
+      propertyPath: m_UseGeometry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797817011241332435, guid: ee8e7b3f3106272459a186164f1f99c6,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: e9efc4731723bf44d96cfb74925e1270,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee8e7b3f3106272459a186164f1f99c6, type: 3}
 --- !u!1 &1273166245
@@ -27284,7 +27295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   createStartAndEnd: 1
-  forceStartAndEndInRooms: 0
+  forceStartAndEndInRooms: 1
   minimumDistanceBetweenStartAndEnd: 100
   maximumDistanceBetweenStartAndEnd: 100
   algorithmChoice: 0
@@ -27314,7 +27325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surface: {fileID: 0}
   MapWidth: 6
-  MapHeight: 7
+  MapHeight: 9
   seed: 0
   useSeed: 0
   mapDimensionsType: 1

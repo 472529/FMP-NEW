@@ -460,12 +460,13 @@ MonoBehaviour:
   allAmmo: 10
   currentAmmo: 0
   reloadTime: 2
+  isEquipped: 0
   anim: {fileID: 2593554258705370570}
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 9146236531806491941}
   impactEffect: {fileID: 441609232645237735}
   recoil: {fileID: 6893640180177897529}
-  gunSound: {fileID: 0}
+  gunSound: {fileID: 5544145944279598376}
 --- !u!95 &2593554258705370570
 Animator:
   serializedVersion: 3
@@ -577,7 +578,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 62859345da2614b438a4839c78ade8ed, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 181c68120cf5c6048897a415bc077598, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

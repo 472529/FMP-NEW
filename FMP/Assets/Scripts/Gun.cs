@@ -26,7 +26,7 @@ public class Gun : MonoBehaviour
 
     private float nextTimeForFire = 2f;
 
-    private void Awake()
+    private void Start()
     {
         gunSound = GetComponent<AudioSource>();
         recoil = GetComponent<New_Weapon_Recoil_Script>();

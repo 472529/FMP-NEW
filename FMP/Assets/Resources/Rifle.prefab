@@ -611,21 +611,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fca3d921dabe0743ab71dad8f682735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 15
   range: 50
   impactForce: 30
-  fireRate: 10
+  fireRate: 4
   maxAmmo: 20
   allAmmo: 40
   currentAmmo: 20
   reloadTime: 1
+  isEquipped: 0
   anim: {fileID: 6307657667922024130}
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 1986541164999796392}
   impactEffect: {fileID: 9092162638184575971}
   recoil: {fileID: 706156867110730696}
-  gunSound: {fileID: 5402782360951671304, guid: ff1701ffe50fbf649a7403358885635a,
-    type: 3}
+  gunSound: {fileID: 4811892135828502624}
 --- !u!114 &706156867110730696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 38b450e2adcb6f542acc8c1d423bd8dc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7b43a0ab12997ce4b8b0e0be6cb35007, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

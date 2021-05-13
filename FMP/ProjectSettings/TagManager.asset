@@ -20,6 +20,7 @@ TagManager:
   - FxTemporaire
   - Explosion
   - Navmesh
+  - Waypoint
   layers:
   - Default
   - TransparentFX
