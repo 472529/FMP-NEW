@@ -21,6 +21,7 @@ TagManager:
   - Explosion
   - Navmesh
   - Waypoint
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

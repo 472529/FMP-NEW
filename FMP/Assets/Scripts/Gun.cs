@@ -39,35 +39,36 @@ public class Gun : MonoBehaviour
     }
     void Update()
     {
-        
-        if (isReloading)
+        if (!PauseMenu.isPaused)
         {
-            return;
+            if (isReloading)
+            {
+                return;
+            }
+            if (allAmmo <= 0)
+            {
+
+            }
+
+            else if (currentAmmo == 0)
+            {
+                StartCoroutine(Reload());
+                return;
+            }
+
+
+            /*else if (Input.GetKey(KeyCode.R) && !isReloading)
+            {
+                StartCoroutine(Reload());
+            }*/
+
+            else if (Input.GetButton("Fire1") && Time.time >= nextTimeForFire && allAmmo >= 0)
+            {
+                nextTimeForFire = Time.time + 1f / fireRate;
+                muzzleFlash.Play();
+                Shoot();
+            }
         }
-        if (allAmmo <= 0)
-        {
-
-        }
-
-        else if (currentAmmo == 0)
-        {
-            StartCoroutine(Reload());
-            return;
-        }
-
-        
-        /*else if (Input.GetKey(KeyCode.R) && !isReloading)
-        {
-            StartCoroutine(Reload());
-        }*/
-
-        else if (Input.GetButton("Fire1") && Time.time >= nextTimeForFire && allAmmo >= 0)
-        {
-            nextTimeForFire = Time.time + 1f / fireRate;
-            muzzleFlash.Play();
-            Shoot();
-        }
-
         
 
 
