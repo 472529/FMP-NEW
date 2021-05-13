@@ -40,7 +40,7 @@ LineRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067766963734648085}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 0
@@ -136,7 +136,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0
     generateLightingData: 0
-  m_UseWorldSpace: 0
+  m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!1 &1067834604254909589
 GameObject:
@@ -413,7 +413,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1067839490078066177}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 5
+  m_Radius: 1
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5340,7 +5340,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1064888455283922191}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &870899547335491191
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -10088,14 +10088,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068133857373079451}
-  m_LocalRotation: {x: 0.002801001, y: 0.7094402, z: -0.7047546, w: -0.0027825236}
+  m_LocalRotation: {x: 0.3003622, y: 0.64415824, z: -0.63754797, w: 0.29727992}
   m_LocalPosition: {x: -0.013546719, y: 0.47798824, z: -0.0013230275}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1070124294294175259}
   m_Father: {fileID: 1064786095747047457}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 89.409004, y: 180, z: 49.998}
 --- !u!33 &1054113832420536811
 MeshFilter:
   m_ObjectHideFlags: 0

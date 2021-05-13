@@ -82,7 +82,7 @@ public class EnemyAiTutorial : MonoBehaviour
         //agent.SetDestination(transform.position);
 
         //transform.rotation = Quaternion.LookRotation(transform.position  player.position);
-        transform.LookAt(2 * transform.position + player.position);
+        transform.LookAt(player.position);
 
         if (!alreadyAttacked)
         {
