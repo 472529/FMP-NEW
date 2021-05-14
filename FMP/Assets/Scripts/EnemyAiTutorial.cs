@@ -10,8 +10,9 @@ public class EnemyAiTutorial : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float health;
-
+    public float Health1;
+    public int damage = 20;
+    public Player health;
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -30,6 +31,7 @@ public class EnemyAiTutorial : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        health = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     private void Update()
@@ -42,7 +44,7 @@ public class EnemyAiTutorial : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
-
+    
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
@@ -103,13 +105,18 @@ public class EnemyAiTutorial : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        Health1 -= damage;
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (Health1 <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
     private void DestroyEnemy()
     {
         Destroy(gameObject);
+    }
+
+    void DestroyProjectile()
+    {
+        Destroy(projectile);
     }
 
     private void OnDrawGizmosSelected()
