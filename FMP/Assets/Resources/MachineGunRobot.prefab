@@ -413,7 +413,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1067839490078066177}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 2
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -423,7 +423,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 3
-  m_BaseOffset: 1
+  m_BaseOffset: 1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 1
 --- !u!114 &5058225770322213810
@@ -446,9 +446,11 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256
-  health: 50
+  Health1: 0
+  damage: 20
+  health: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 3
+  walkPointRange: 2
   timeBetweenAttacks: 2
   projectile: {fileID: 7422941822580239508, guid: d3fd44bd6c6096249b0bca826146e283,
     type: 3}

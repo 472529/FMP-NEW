@@ -17,6 +17,7 @@ public class EnemyAiTutorial : MonoBehaviour
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
+    public float walkPointTime;
 
     //Attacking
     public float timeBetweenAttacks;
@@ -57,7 +58,13 @@ public class EnemyAiTutorial : MonoBehaviour
         //Walkpoint reached
         //need to make it search for a new walk point if it cant reach it in a certain amount of time
         if (distanceToWalkPoint.magnitude < 1f)
+        {
             walkPointSet = false;
+        }
+        else if (walkPointTime == 2)
+        {
+            walkPointSet = false;
+        }
     }
     private void SearchWalkPoint()
     {
@@ -81,7 +88,7 @@ public class EnemyAiTutorial : MonoBehaviour
     private void AttackPlayer()
     {
         //Make sure enemy doesn't move
-        //agent.SetDestination(transform.position);
+        agent.SetDestination(transform.position);
 
         //transform.rotation = Quaternion.LookRotation(transform.position  player.position);
         transform.LookAt(player.position);
@@ -125,5 +132,8 @@ public class EnemyAiTutorial : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, walkPointRange);
+
     }
 }
