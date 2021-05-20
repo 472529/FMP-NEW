@@ -27383,11 +27383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   createStartAndEnd: 1
   forceStartAndEndInRooms: 1
-  minimumDistanceBetweenStartAndEnd: 100
+  minimumDistanceBetweenStartAndEnd: 35.08174
   maximumDistanceBetweenStartAndEnd: 100
   algorithmChoice: 0
-  directionChangeModifier: 46
-  sparsenessModifier: 50
+  directionChangeModifier: 76
+  sparsenessModifier: 14
   openDeadEndModifier: 41
   createRooms: 1
   minRooms: 1
