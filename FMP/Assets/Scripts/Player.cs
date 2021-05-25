@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             isLoadScene = true;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("Death");
         }
     }
 

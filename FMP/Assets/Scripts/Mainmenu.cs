@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Mainmenu : MonoBehaviour
 {
-
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -19,4 +18,11 @@ public class Mainmenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    
 }
